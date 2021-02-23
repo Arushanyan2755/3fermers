@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 980px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+header {
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff5673), color-stop(#a000a0), to(blue));
+  background: linear-gradient(to bottom right, #ff5673, #a000a0, blue);
+  color: #FFF;
+}
+
+header .header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+@media screen and (max-width: 624px) {
+  header .header nav .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 80px;
+  }
+}
+
+header .header nav .nav .brand {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 15px;
+  font-family: arial;
+  cursor: pointer;
+}
+
+header .header nav .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 396px) {
+  header .header nav .nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  header .header nav .nav ul li {
+    margin: 5px 0;
+  }
+}
+
+header .header nav .nav ul li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+header .header nav .nav ul li a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+header .header nav .nav ul li a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 396px) {
+  header .header nav .nav ul li a {
+    font-size: 20px;
+  }
+}
+
+header .header .content {
+  width: 100%;
+  min-height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 982px) {
+  header .header .content {
+    min-height: auto;
+    text-align: center;
+  }
+}
+
+header .header .content .content_wrap {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 982px) {
+  header .header .content .content_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 0 50px 0;
+  }
+}
+
+header .header .content .content_wrap .text {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+header .header .content .content_wrap .text .p {
+  font-size: 13px;
+  max-width: 500px;
+  line-height: 18px;
+}
+
+@media screen and (max-width: 982px) {
+  header .header .content .content_wrap .text .p {
+    max-width: 300px;
+    text-align: center;
+  }
+}
+
+header .header .content .content_wrap .text h1 {
+  margin: 10px 0;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 982px) {
+  header .header .content .content_wrap .text h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  header .header .content .content_wrap .text h1 {
+    font-size: 33px;
+  }
+}
+
+header .header .content .content_wrap .text h2 {
+  margin: 10px 0;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 982px) {
+  header .header .content .content_wrap .text h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  header .header .content .content_wrap .text h2 {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+}
+
+header .header .content .content_wrap .imgsec {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+@media screen and (max-width: 982px) {
+  header .header .content .content_wrap .imgsec {
+    padding: 40px 0;
+    -ms-flex-preferred-size: unset;
+        flex-basis: unset;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header .header .content .content_wrap .imgsec {
+    width: 80%;
+  }
+}
+
+header .header .content .content_wrap .imgsec img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*
+header::before,header::after{
+    content: "";
+    position: absolute ;
+    bottom: -200px;
+    height: 40%;
+    width: 60%;
+    background: #FFF;
+}
+header::before{
+    left:-50px;
+    transform: rotateZ(10deg);
+}
+header::after{
+    right:-50px;
+    transform: rotateZ(-10deg);
+}
+*/
+/*# sourceMappingURL=style.css.map */
